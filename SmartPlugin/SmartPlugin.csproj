@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8ED50254-084D-4FB4-9133-B394923DF1A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartPlugin</RootNamespace>
+    <AssemblyName>SmartPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Smart\bin\Debug\Plugin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Smart\bin\Release\plugin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Smart\bin\Debug\Plugin\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SmartChildForm\AuthorizeTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\AuthorizeTimeForm.Designer.cs">
+      <DependentUpon>AuthorizeTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\EditPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\EditPassword.Designer.cs">
+      <DependentUpon>EditPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\GroupAuthorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\GroupAuthorize.Designer.cs">
+      <DependentUpon>GroupAuthorize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\DeviceVehicleAuthorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\DeviceVehicleAuthorize.Designer.cs">
+      <DependentUpon>DeviceVehicleAuthorize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\DeviceAuthorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\DeviceAuthorize.Designer.cs">
+      <DependentUpon>DeviceAuthorize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\NewUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\NewUserForm.Designer.cs">
+      <DependentUpon>NewUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\VehicleAuthorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\VehicleAuthorize.Designer.cs">
+      <DependentUpon>VehicleAuthorize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\CustomerGroupInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\CustomerGroupInfo.Designer.cs">
+      <DependentUpon>CustomerGroupInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\EditDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\EditDeviceForm.Designer.cs">
+      <DependentUpon>EditDeviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\NewDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\NewDeviceForm.Designer.cs">
+      <DependentUpon>NewDeviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\EditCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\EditCustomerForm.Designer.cs">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\NewCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\NewCustomerForm.Designer.cs">
+      <DependentUpon>NewCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\EditGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\EditGroupForm.Designer.cs">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\NewGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\NewGroupForm.Designer.cs">
+      <DependentUpon>NewGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmartChildForm\NewVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\NewVehicleForm.Designer.cs">
+      <DependentUpon>NewVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmartMainForm.Designer.cs">
+      <DependentUpon>SmartMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartPlugin.cs" />
+    <Compile Include="SmartChildForm\SmartUserControl\CarAuthorized.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\SmartUserControl\CarAuthorized.Designer.cs">
+      <DependentUpon>CarAuthorized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartChildForm\SmartUserControl\DeviceOptionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SmartChildForm\SmartUserControl\DeviceOptionControl.Designer.cs">
+      <DependentUpon>DeviceOptionControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Smart\Smart.csproj">
+      <Project>{736CFD27-E33D-4F1A-84E9-115AA31D30B7}</Project>
+      <Name>Smart</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indexenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indexClick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SmartChildForm\AuthorizeTimeForm.resx">
+      <DependentUpon>AuthorizeTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\AuthorizeTimeForm.zh-CHS.resx">
+      <DependentUpon>AuthorizeTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\CustomerGroupInfo.zh-CHS.resx">
+      <DependentUpon>CustomerGroupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\DeviceAuthorize.zh-CHS.resx">
+      <DependentUpon>DeviceAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditCustomerForm.zh-CHS.resx">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditDeviceForm.zh-CHS.resx">
+      <DependentUpon>EditDeviceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditGroupForm.zh-CHS.resx">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditPassword.resx">
+      <DependentUpon>EditPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditPassword.zh-CHS.resx">
+      <DependentUpon>EditPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditUserForm.zh-CHS.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\GroupAuthorize.resx">
+      <DependentUpon>GroupAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\DeviceVehicleAuthorize.resx">
+      <DependentUpon>DeviceVehicleAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\DeviceAuthorize.resx">
+      <DependentUpon>DeviceAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\GroupAuthorize.zh-CHS.resx">
+      <DependentUpon>GroupAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewCustomerForm.zh-CHS.resx">
+      <DependentUpon>NewCustomerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewDeviceForm.zh-CHS.resx">
+      <DependentUpon>NewDeviceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewGroupForm.zh-CHS.resx">
+      <DependentUpon>NewGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewUserForm.resx">
+      <DependentUpon>NewUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewUserForm.zh-CHS.resx">
+      <DependentUpon>NewUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewVehicleForm.zh-CHS.resx">
+      <DependentUpon>NewVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\VehicleAuthorize.resx">
+      <DependentUpon>VehicleAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\CustomerGroupInfo.resx">
+      <DependentUpon>CustomerGroupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditDeviceForm.resx">
+      <DependentUpon>EditDeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewDeviceForm.resx">
+      <DependentUpon>NewDeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditCustomerForm.resx">
+      <DependentUpon>EditCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewCustomerForm.resx">
+      <DependentUpon>NewCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\EditGroupForm.resx">
+      <DependentUpon>EditGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewGroupForm.resx">
+      <DependentUpon>NewGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\NewVehicleForm.resx">
+      <DependentUpon>NewVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartMainForm.resx">
+      <DependentUpon>SmartMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\SmartUserControl\CarAuthorized.resx">
+      <DependentUpon>CarAuthorized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartChildForm\SmartUserControl\DeviceOptionControl.resx">
+      <DependentUpon>DeviceOptionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartMainForm.zh-CHS.resx">
+      <DependentUpon>SmartMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
